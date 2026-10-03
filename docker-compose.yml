@@ -1,0 +1,6 @@
+services:
+  web:
+    build: .
+    ports:
+      - "80:3000"        # port 80 ของ VPS → port 3000 ในแอป
+    restart: unless-stopped
